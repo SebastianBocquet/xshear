@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
         usage_and_exit();
       }
       sconfig_open_pair_url(shear->config,argv[3]);
-      fprintf(shear->config->pair_fd, "# lens_id source_id r_bin weight\n");
+      fprintf(shear->config->pair_fd, "# lens_id source_id r_bin radius weight scinv gsens_t z_mc g_t\n");
     }
 
     Source* src=source_new(shear->config);

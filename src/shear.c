@@ -391,7 +391,7 @@ void shear_procpair(Shear* self,
     
     if(rbin<config->pairlog_rmax && rbin>=config->pairlog_rmin && 
       (config->pairlog_nmax<=0 || self->totpairs[rbin]<=config->pairlog_nmax)) {
-        fprintf(config->pair_fd, "%ld %ld %d %le %le %le %le\n", lens->index, src->index, rbin, s, scinv, gsens_t, zs);
+        fprintf(config->pair_fd, "%ld %ld %d %le %le %le %le %le %le\n", lens->index, src->index, rbin, r, s, scinv, gsens_t, zs, gt);
     }
 
 
